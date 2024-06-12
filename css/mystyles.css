@@ -1,0 +1,441 @@
+.grid {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	grid-gap: 1rem;
+}
+
+.grid .item.actual-size .image-holder {
+    float: left;
+    width: 864px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0,0,0,0.0625);
+}
+
+.grid .item.actual-size .image-holder img {
+    text-align: center;
+    vertical-align: center;
+    width: auto;
+}
+
+.grid .item.site-size .image-holder {
+    float: left;
+    width: 864px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0,0,0,0.125);
+}
+
+.grid .item.actual-size .image-holder.w592 {
+    float: left;
+    width: 592px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0,0,0,0.125);
+}
+
+.grid .item.site-size .image-holder.w592 {
+    float: left;
+    width: 592px;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(0,0,0,0.125);
+}
+
+.grid .item.site-size .image-holder img {
+    width: 100%;
+}
+
+.grid .item.actual-size img {
+    text-align: center;
+    vertical-align: center;
+    width: auto;
+}
+
+.grid .item .text-holder {
+    float: right;
+    text-align: left;
+    padding-left: 1rem;
+    width: calc(100% - 864px);
+}
+
+.grid .item .text-holder.w592 {
+    width: calc(100% - 592px);
+}
+
+.grid.kt-home {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid .cell {
+	position: relative;
+	aspect-ratio: 1 / 1;
+}
+
+.grid .cell.parallax {
+	transform-style: preserve-3d;
+}
+
+.grid .cell.h-double {
+	grid-column: span 2;
+}
+
+.grid .cell.h-triple {
+	grid-column: span 3;
+}
+
+.grid .cell.v-double {
+	grid-row: span 2;
+}
+
+.grid .cell.v-triple {
+	grid-row: span 3;
+}
+
+.grid .cell .cell-content-holder {
+	position: absolute;
+	z-index: 1;
+    top: 0;
+    left: 0;
+	aspect-ratio: 1 / 1;
+	width: 100%;
+	height: 100%;
+}
+
+.grid .cell .cell-content-holder.aspect-3x2 {
+	aspect-ratio: 3 / 2;
+}
+
+.grid .cell.background-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.grid .cell .cell-content-overlay {
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.125);
+	transition: all 0.5s ease;
+}
+
+.grid .cell:hover .cell-content-overlay {
+	opacity: 1;
+}
+
+.grid .cell .cell-content-overlay .overlay-title-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	z-index: 3;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+}
+
+.grid .cell .cell-content-overlay .overlay-title-wrapper.t2b {
+    transform: rotate(90deg);  
+    transform-origin: 50% 50%;
+}
+
+.grid .cell .cell-content-overlay .overlay-title-wrapper.r2l {
+    text-align: right;
+}
+
+.grid .cell .cell-content-overlay .overlay-title-wrapper h2.overlay-title {
+    display: inline-block;
+    font: normal 60px/72px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+	line-height: 1;
+    text-align: left; 
+    padding: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .grid .cell .cell-content-overlay .overlay-title-wrapper h2.overlay-title {
+        font: normal 72px/80px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .grid .cell .cell-content-overlay .overlay-title-wrapper h2.overlay-title {
+        font: normal 96px/90px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+    }
+    
+}
+
+
+
+.grid .cell .cell-content-overlay .overlay-title-wrapper h3.overlay-title {
+    display: inline-block;
+	font: normal 48px/48px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+	line-height: 1;
+    text-align: left; 
+    padding: 32px;
+}
+
+.grid .cell .cell-content-overlay .overlay-title-wrapper h2.overlay-title.t2b,
+.grid .cell .cell-content-overlay .overlay-title-wrapper h3.overlay-title.t2b {
+    writing-mode: vertical-rl;
+    padding-left: 16px; 
+}
+
+h2.white,
+h3.white {
+	color: #FFFFFF;
+}
+
+h2.pink,
+h3.pink {
+	color: #ff33cc;
+    color: #66cc66;
+    color: #66cc66;
+    color: #66cc66;
+    color: #ff33ff;
+    color: #000066;
+    color: #ff0000;
+    color: #0099ff; 
+}
+
+
+
+.collaborators.listing {
+    width: 100%;
+}
+
+.collaborator-list {
+    width: calc(100% + 1rem);
+    font-size: 0;
+    margin-left: -0.5rem;
+    margin-bottom: 9rem;
+}
+
+.collaborator-list .collaborator-item {
+   display: inline-block;
+   /*width: calc((100% - 2rem) / 3);
+   margin-right: 1rem;
+   margin-bottom: 1rem;*/
+   width: 100%;
+   vertical-align: top;
+   padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .collaborator-list .collaborator-item {
+       width: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .collaborator-list .collaborator-item {
+       width: 33.333%;
+    }
+    
+}
+
+.collaborator-list .collaborator-item a {
+   color: #999; 
+}
+
+.collaborator-list .collaborator-item a h3.collaborator-name,
+.collaborator-list .collaborator-item a h3.collaborator-name span.collaborator-last-name {
+    color: #000000; 
+    transition: all 0.25s ease;
+}
+
+.collaborator-list .collaborator-item h3.collaborator-name {
+    font: normal 22px/24px "MaharamNeue-Regular", Helvetica, Arial, sans-serif;
+    margin-bottom: 0.625rem;
+}
+
+.collaborator-list .collaborator-item img.collaborator-portrait {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.collaborator-list .collaborator-item p.collaborator-bio {
+   display: inline-block;
+   width: 100%;
+   font: normal 14px/18px "MaharamNeue-Regular", Helvetica, Arial, sans-serif;
+   color: #000;
+}
+
+
+
+h3.collaborator-name.color1,
+h3.collaborator-name.color1 span.collaborator-last-name {
+    color: #70b937 !important; 
+}
+
+.collaborator-list .collaborator-item a:hover h3.collaborator-name,
+.collaborator-list .collaborator-item a:hover h3.collaborator-name span.collaborator-last-name {
+   color: #FF0000; 
+}
+
+.collaborators.show.kt h2 {
+    font: normal 18px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+.list-controls {
+    font: normal 13px/15px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+}
+
+.list-controls .pagination em.current {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 3px;
+    margin: 0;
+    color: #000000;
+    font: normal normal 13px/15px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+    height: 16px;
+}
+
+
+.page-title-wrapper {
+    text-align: left;
+}
+
+.page-title-wrapper.right-align {
+    text-align: right;
+}
+
+h1.page-title {
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+h1.page-title.right-float {
+    float: right;
+}
+
+h1.page-title.vertical-text {
+    writing-mode: vertical-rl;
+    
+}
+
+
+.kt a.eyebrow-link {
+    display: inline-block;
+    font: normal 13px/14px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+    color: #000;
+    padding-bottom: 8px;
+	transition: all 0.25s ease;
+}
+
+.kt a.eyebrow-link:hover {
+    color: #FF0000 !important;
+}
+
+.kt ul.column-list li a {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.kt ul.column-list li a:hover {
+    color: #FF0000 !important;
+}
+
+.kt ul.column-list li img {
+    width: 13px;
+    margin-top: 5px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+
+/* -- PILLOWS -- */
+
+.opening-marketing-image {
+    width: 100%;
+    margin-bottom: 36px;
+}
+
+
+
+/* -- environment -- */
+
+.relative {
+    position: relative;
+}
+
+.toc-wrapper {
+    display: inline-block;
+    width: 100%;
+    position: sticky;
+    top: 36px;
+}
+
+
+ul.toc {
+    display: inline-block;
+}
+
+ul.toc li {
+    font: normal 14px/20px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+
+ul.toc li a {
+    text-decoration: none;
+    font: normal 14px/20px "MaharamNeue-Regular", Helvetica, Arial, sans-serif;
+    color: #000;
+	transition: all 0.25s ease;
+}
+
+ul.toc li a.indent {
+    font: normal 14px/20px "MaharamNeue-Regular", Helvetica, Arial, sans-serif;
+    padding-left: 18px;
+}
+
+ul.toc li a:hover,
+ul.toc li a.active {
+    color: #FF0000;
+}
+
+
+
+/* -- PDP -- */
+
+.decision-drivers {
+    margin-bottom: 6px;
+}
+
+.decision-drivers p.brand {
+    font: normal 14px/20px "MaharamNeue-Regular", Helvetica, Arial, sans-serif !important; 
+    margin-bottom: 0px;
+}
+
+.decision-drivers span.product-name {
+    display: inline-block;
+    font: normal 36px/38px "MaharamNeue-Medium", Helvetica, Arial, sans-serif;
+    margin-bottom: 0px;
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

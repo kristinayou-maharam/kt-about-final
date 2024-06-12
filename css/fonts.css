@@ -1,0 +1,99 @@
+@font-face {
+	font-family: 'MaharamNeue';
+	src: url('../fonts/MaharamNeue-Regular.eot');
+	src: url('../fonts/MaharamNeue-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MaharamNeue-Regular.woff2') format('woff2'),
+		url('../fonts/MaharamNeue-Regular.woff') format('woff'),
+		url('../fonts/MaharamNeue-Regular.ttf')  format('truetype'),
+		url('../fonts/MaharamNeue-Regular.svg#svgFontName') format('svg');
+	font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MaharamNeue';
+	src: url('../fonts/MaharamNeue-Italic.eot');
+	src: url('../fonts/MaharamNeue-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MaharamNeue-Italic.woff2') format('woff2'),
+		url('../fonts/MaharamNeue-Italic.woff') format('woff'),
+		url('../fonts/MaharamNeue-Italic.ttf')  format('truetype'),
+		url('../fonts/MaharamNeue-Italic.svg#svgFontName') format('svg');
+	font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: 'MaharamNeue';
+	src: url('../fonts/MaharamNeue-Medium.eot');
+	src: url('../fonts/MaharamNeue-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MaharamNeue-Medium.woff2') format('woff2'),
+		url('../fonts/MaharamNeue-Medium.woff') format('woff'),
+		url('../fonts/MaharamNeue-Medium.ttf')  format('truetype'),
+		url('../fonts/MaharamNeue-Medium.svg#svgFontName') format('svg');
+	font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'MaharamNeue';
+	src: url('../fonts/MaharamNeue-MediumItalic.eot');
+	src: url('../fonts/MaharamNeue-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MaharamNeue-MediumItalic.woff2') format('woff2'),
+		url('../fonts/MaharamNeue-MediumItalic.woff') format('woff'),
+		url('../fonts/MaharamNeue-MediumItalic.ttf')  format('truetype'),
+		url('../fonts/MaharamNeue-MediumItalic.svg#svgFontName') format('svg');
+	font-weight: 700;
+    font-style: italic;
+}
+
+
+
+
+
+@font-face {
+	font-family: 'KTFold-Regular';
+	src: url('../fonts/KTFold-Regular.eot');
+	src: url('../fonts/KTFold-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/KTFold-Regular.woff2') format('woff2'),
+		url('../fonts/KTFold-Regular.woff') format('woff'),
+		url('../fonts/KTFold-Regular.ttf')  format('truetype'),
+		url('../fonts/KTFold-Regular.svg#svgFontName') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'KTFold-Italic';
+	src: url('../fonts/KTFold-Italic.eot');
+	src: url('../fonts/KTFold-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/KTFold-Italic.woff2') format('woff2'),
+		url('../fonts/KTFold-Italic.woff') format('woff'),
+		url('../fonts/KTFold-Italic.ttf')  format('truetype'),
+		url('../fonts/KTFold-Italic.svg#svgFontName') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'KTFold-Medium';
+	src: url('../fonts/KTFold-Medium.eot');
+	src: url('../fonts/KTFold-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/KTFold-Medium.woff2') format('woff2'),
+		url('../fonts/KTFold-Medium.woff') format('woff'),
+		url('../fonts/KTFold-Medium.ttf')  format('truetype'),
+		url('../fonts/KTFold-Medium.svg#svgFontName') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'KTFold-MediumItalic';
+	src: url('../fonts/KTFold-MediumItalic.eot');
+	src: url('../fonts/KTFold-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/KTFold-MediumItalic.woff2') format('woff2'),
+		url('../fonts/KTFold-MediumItalic.woff') format('woff'),
+		url('../fonts/KTFold-MediumItalic.ttf')  format('truetype'),
+		url('../fonts/KTFold-MediumItalic.svg#svgFontName') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
