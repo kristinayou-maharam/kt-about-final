@@ -530,7 +530,7 @@ p a:hover{
   }
 
   /* added 6/17 */
-  * {
+  .slick-arrow {
     -webkit-tap-highlight-color: transparent !important;
   }
 
@@ -1022,11 +1022,6 @@ p a:hover{
       margin-bottom: 0;
       text-align: center;
     }
-
-    *{
-      -webkit-tap-highlight-color: transparent !important;
-    }
-  
 
   }
 
