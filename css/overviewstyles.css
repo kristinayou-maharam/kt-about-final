@@ -521,11 +521,13 @@ p a:hover{
 
   a {
     text-decoration: underline;
+    color: black !important;
   }
 
   /* added 6/17 */
   .slick-arrow {
     -webkit-tap-highlight-color: transparent !important;
+    color: black !important;
   }
 
   .slick-arrow:hover{
