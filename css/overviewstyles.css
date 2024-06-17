@@ -461,7 +461,7 @@ p a:hover{
   .anni-prevarrow {
     display: inline-block;
     border: 0px;
-    background-color: transsent;
+    background-color: transparent;
   }
 
   .anni-nextarrow {
@@ -610,6 +610,8 @@ p a:hover{
 
     #arrows {
       width: 8vw !important;
+      /* added 6/17 */
+      -webkit-tap-highlight-color: transparent !important;
     }
 
     #mobile-scroll-container {
