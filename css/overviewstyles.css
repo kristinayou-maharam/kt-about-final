@@ -45,10 +45,11 @@ p a:hover{
 /* added 6/17 */
 #scroll-to-top{
   display: inline-block;
+  width: 15vw;
   z-index: 0;
   position: fixed;
   top: 95vh;
-  right: 10%;
+  right: 0;
 }
 
 
@@ -529,9 +530,8 @@ p a:hover{
   }
 
   /* added 6/17 */
-  button,
-  a {
-    -webkit-tap-highlight-color: transparent;
+  * {
+    -webkit-tap-highlight-color: transparent !important;
   }
 
   @media only screen and  (max-width: 1256px) {
@@ -1022,6 +1022,11 @@ p a:hover{
       margin-bottom: 0;
       text-align: center;
     }
+
+    *{
+      -webkit-tap-highlight-color: transparent !important;
+    }
+  
 
   }
 
