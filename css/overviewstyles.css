@@ -276,14 +276,7 @@ p a:hover{
     overflow-y: hidden;
   }
 
-  #mobile-horizontal-scroll::-webkit-scrollbar-track {
-    background-color: #ffffff;
-  }
 
-  #mobile-horizontal-scroll::-webkit-scrollbar-thumb {
-    background: #f99f00;
-    border-radius: 0;
-  }
 
   #mobile-scroll-container {
     display: none;
@@ -493,9 +486,8 @@ p a:hover{
   #arrows {
     display: inline-block;
     width: 80px;
-    /* added 6/17 */
-    -webkit-tap-highlight-color: transparent !important;
   }
+
   .slick-controls {
     margin-top: 15px;
   }
@@ -534,6 +526,14 @@ p a:hover{
   /* added 6/17 */
   .slick-arrow {
     -webkit-tap-highlight-color: transparent !important;
+  }
+
+  .slick-arrow:hover{
+    color: #f99f00;
+  }
+
+  .slick-arrow:focus {
+    outline: none !important;
   }
 
   @media only screen and  (max-width: 1256px) {
