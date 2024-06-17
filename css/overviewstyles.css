@@ -493,6 +493,8 @@ p a:hover{
   #arrows {
     display: inline-block;
     width: 80px;
+    /* added 6/17 */
+    -webkit-tap-highlight-color: transparent !important;
   }
   .slick-controls {
     margin-top: 15px;
@@ -610,8 +612,6 @@ p a:hover{
 
     #arrows {
       width: 8vw !important;
-      /* added 6/17 */
-      -webkit-tap-highlight-color: transparent !important;
     }
 
     #mobile-scroll-container {
