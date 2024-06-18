@@ -372,6 +372,7 @@
                 <img id="lastimg" src="./images/crown_hall.jpg">
                 <p id="caption" style="width: 70% !important;">Florence graduated from The Illinois Institute of Technology in 1941, where she studied architecture with Mies van der Rohe.<br><h6 style="width: 50%;">Courtesy of Library of Congress, Prints & Photographs Division, Balthazar Korab Collection.</h6></p>
               </div>
+     
             </div>
           </div>
   
@@ -861,9 +862,10 @@
 
       gsap.registerPlugin(ScrollTrigger);
 
-    //   added 6/18
+    // //   added 6/18
       let scrollContainer = document.getElementById("scroll-container");
       let scrollContainerTwo = document.getElementById("scroll-container-two");
+      let wholeContainer = document.querySelector(".kt-container");
       
       ScrollTrigger.create({
         trigger: "#scroll-container",
@@ -883,6 +885,7 @@
           scrub: true,
           pin: false,
           pinSpacing: false,
+          markers:true,
           invalidateOnRefresh: true
         }
       });
@@ -904,8 +907,9 @@
           start: "center center",
           end: "+=2400",
           scrub: true,
-          pin: false,
+          pin: "scroll-container-two",
           pinSpacing: false,
+          markers:true,
           invalidateOnRefresh: true
         }
       });
