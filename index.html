@@ -861,14 +861,16 @@
 
       gsap.registerPlugin(ScrollTrigger);
 
+    //   added 6/18
+      let scrollContainer = document.getElementById("scroll-container");
+      let scrollContainerTwo = document.getElementById("scroll-container-two");
+      
       ScrollTrigger.create({
-        trigger: "#scroll-container",
+        trigger: scrollContainer,
         start: "top top",
         end: "+=2300", // Adjust based on the length of the scrollable content
         pin: true
       });
-
-      let scrollContainer = document.getElementById("scroll-container");
 
       gsap.to("#horizontal-img-scroll", {
         xPercent: -480,
@@ -885,7 +887,7 @@
       });
 
       ScrollTrigger.create({
-        trigger: "#scroll-container-two",
+        trigger: scrollContainerTwo,
         start: "top top",
         end: "+=2400", // Adjust based on the length of the scrollable content
         pin: true

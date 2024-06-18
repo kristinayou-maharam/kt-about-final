@@ -864,8 +864,8 @@ p a:hover{
       margin-top: 5vh !important;
       display: block;
     }
-/* 
-    added 6/18 */
+    
+/* added 6/18 */
 
     .slick-controls-two {
       width: 25vw !important;
@@ -881,6 +881,8 @@ p a:hover{
       width: 30vw !important;
       margin-left: 2% !important;
     }
+  
+    /* */
 
     #caption {
       width: 50% !important;
