@@ -864,20 +864,18 @@ p a:hover{
       margin-top: 5vh !important;
       display: block;
     }
-
+/* 
+    added 6/18 */
 
     .slick-controls-two {
-      margin-left: 2% !important;
       width: 25vw !important;
     }
 
     .slick-controls-three {
-      margin-left: 2% !important;
       width: 25vw !important;
     }
 
     .slick-controls-four {
-      margin-left: 2% !important;
       width: 25vw !important;
     }
 
