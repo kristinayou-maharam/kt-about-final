@@ -322,6 +322,7 @@ p a:hover{
     overflow-y: hidden;
     width: 100% !important;
     display: block;
+    position: relative;
   }
 
   #scroll-container-two {
@@ -329,6 +330,7 @@ p a:hover{
     overflow-y: hidden;
     width: 100% !important;
     display: block;
+    position: relative;
   }
 
   /* changed 6/18- no position:relative */
