@@ -869,14 +869,17 @@ p a:hover{
 
     .slick-controls-two {
       width: 25vw !important;
+      margin-left: 8% !important;
     }
 
     .slick-controls-three {
       width: 25vw !important;
+      margin-left: 8% !important;
     }
 
     .slick-controls-four {
       width: 25vw !important;
+      margin-left: 8% !important;
     }
 
     #caption {
