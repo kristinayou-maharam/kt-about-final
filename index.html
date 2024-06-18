@@ -866,7 +866,7 @@
       let scrollContainerTwo = document.getElementById("scroll-container-two");
       
       ScrollTrigger.create({
-        trigger: scrollContainer,
+        trigger: "#horizontal-img-scroll",
         start: "top top",
         end: "+=2300", // Adjust based on the length of the scrollable content
         pin: true
@@ -887,7 +887,7 @@
       });
 
       ScrollTrigger.create({
-        trigger: scrollContainerTwo,
+        trigger:  "#horizontal-img-scroll-two",
         start: "top top",
         end: "+=2400", // Adjust based on the length of the scrollable content
         pin: true
