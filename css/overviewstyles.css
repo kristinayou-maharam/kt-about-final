@@ -112,6 +112,16 @@ p a:hover{
     width: 100%;;
   }
 
+  /* added 6/18 */
+  #scroll-seemore {
+    display: block;
+    font-size: 12px;
+    font-family: 'KTFold-Medium';
+    margin-top: 10vh;
+    margin-bottom: 5px;
+    width: 100%;;
+  }
+
   #caption {
     font-family: 'KTFold-Regular';
     font-size: 14px;
@@ -299,7 +309,6 @@ p a:hover{
     flex-wrap: nowrap;
     padding-bottom: 50px;
     margin-bottom: 100px;
-    z-index: 200;
     
   }
 
@@ -330,7 +339,6 @@ p a:hover{
     flex-wrap: nowrap;
     padding-bottom: 50px;
     margin-bottom: 100px;
-    z-index: 200;
   }
 
   #horizontal-img-scroll img {
