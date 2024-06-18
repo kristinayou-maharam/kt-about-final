@@ -320,12 +320,12 @@ p a:hover{
     display: block;
   }
 
+  /* changed 6/18- no position:relative */
   #horizontal-img-scroll-two {
     width: 100%;
     height: 65vh;
     display: flex;
     flex-wrap: nowrap;
-    position: relative;
     padding-bottom: 50px;
     margin-bottom: 100px;
   }
@@ -864,7 +864,7 @@ p a:hover{
       margin-top: 5vh !important;
       display: block;
     }
-    
+
 /* added 6/18 */
 
     .slick-controls-two {
