@@ -371,7 +371,6 @@ p a:hover{
   /* changed 6/18 */
   .page-breaker {
     min-height: 100vh;
-    position: relative;
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -381,7 +380,6 @@ p a:hover{
   /* changed 6/18 */
   .page-breaker-two {
     min-height: 100vh;
-    position: relative;
     display: block;
     flex-direction: column;
     justify-content: center;
