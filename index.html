@@ -444,6 +444,7 @@
             “She had that ability to critique [something], to tear it apart and put it back together. She was something else.”<br><br>—Bob Longwell, Knoll employee
           </div>
   
+          <div class="page-breaker-container">
           <div class="page-breaker">
             <div class="ktsection js-section">
             </div>
@@ -452,6 +453,7 @@
             <div class="ktsection js-section">
             </div>
           </div>
+          </div>
   
           <div id="section-header" style="margin-top: 200px;">
             <div id="full-width-rule">
@@ -459,7 +461,7 @@
             <h2 id="section-title" style="margin-top: 10vh; margin-bottom: 120px;">Collaboration</h2>
           </div>
   
-          <!-- changed 6/18 -->
+          <!-- changed 6/18- changed z-index and added div around two carousels -->
            <div style="z-index: 0 !important;">
           <div class="anni-carousel" style="margin-top: -120px; z-index: 5;">
             <div>
@@ -629,10 +631,12 @@
             </div>
           </div>
   
+          <div class="page-breaker-two-container">
           <div class="page-breaker-two">
             <div class="ktsection js-sections">
             </div>
             <div class="ktsection js-sections">
+            </div>
             </div>
           </div>
   
@@ -932,6 +936,7 @@
 
       const controller = new ScrollMagic.Controller();
       const pagebreak = document.querySelector(".page-breaker");
+      const pagebreakContainer = document.querySelector(".page-breaker-container");
 
       const animation = new TimelineMax()
         .staggerFromTo(".js-section", 1, {
@@ -941,15 +946,16 @@
         }, 1);
 
       new ScrollMagic.Scene({
-          triggerElement: pagebreak,
+          triggerElement: pagebreakContainer,
           triggerHook: "onLeave",
           duration: "300%"
         })
-        .setPin(pagebreak)
+        .setPin(pagebreakContainer)
         .setTween(animation)
         .addTo(controller);
 
-      const pagebreaktwo = document.querySelector(".page-breaker-two");
+      const pagebreakTwo = document.querySelector(".page-breaker-two");
+      const pagebreakContainerTwo = document.querySelector(".page-breaker-two-container");
 
       const animationtwo = new TimelineMax()
         .staggerFromTo(".js-sections", 1, {
@@ -959,13 +965,14 @@
         }, 1);
 
       new ScrollMagic.Scene({
-          triggerElement: pagebreaktwo,
+          triggerElement: pagebreakContainerTwo,
           triggerHook: "onLeave",
-          duration: "200%"
+          duration: "300%"
         })
-        .setPin(pagebreaktwo)
+        .setPin(pagebreakContainerTwo)
         .setTween(animationtwo)
         .addTo(controller);
+
 
       $('.cato-carousel').slick({
         infinite: true,
@@ -1006,7 +1013,6 @@
         fade: true,
         cssEase: 'linear'
       });
-
     </script>
     <!-- end for Overview -->
 

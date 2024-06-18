@@ -368,23 +368,23 @@ p a:hover{
     margin-top: 20px;
   }
 
+  /* changed 6/18 */
   .page-breaker {
     min-height: 100vh;
     position: relative;
     display: block;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
     z-index: 100;
   }
 
+  /* changed 6/18 */
   .page-breaker-two {
     min-height: 100vh;
     position: relative;
     display: block;
     flex-direction: column;
     justify-content: center;
-    margin-top: 200px;
     z-index: 100;
   }
 
