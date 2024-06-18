@@ -299,8 +299,7 @@ p a:hover{
     flex-wrap: nowrap;
     padding-bottom: 50px;
     margin-bottom: 100px;
-    /* added 6/18 */
-    z-index: 10;
+    
   }
 
   #scroll-item {
@@ -330,7 +329,6 @@ p a:hover{
     flex-wrap: nowrap;
     padding-bottom: 50px;
     margin-bottom: 100px;
-    z-index: 10;
   }
 
   #horizontal-img-scroll img {
