@@ -866,7 +866,7 @@
       let scrollContainerTwo = document.getElementById("scroll-container-two");
       
       ScrollTrigger.create({
-        trigger: "#horizontal-img-scroll",
+        trigger: "#scroll-container",
         start: "top top",
         end: "+=2300", // Adjust based on the length of the scrollable content
         pin: true
@@ -877,7 +877,7 @@
         x: () => "52vw",
         ease: "none",
         scrollTrigger: {
-          trigger: "#horizontal-img-scroll",
+          trigger: "#scroll-container",
           start: "center center",
           end: "+=2300",
           scrub: true,
@@ -887,7 +887,7 @@
       });
 
       ScrollTrigger.create({
-        trigger:  "#horizontal-img-scroll-two",
+        trigger: "#scroll-container-two",
         start: "top top",
         end: "+=2400", // Adjust based on the length of the scrollable content
         pin: true
@@ -899,7 +899,7 @@
         x: () => "52vw",
         ease: "none",
         scrollTrigger: {
-          trigger: "#horizontal-img-scroll-two",
+          trigger: "#scroll-container-two",
           start: "center center",
           end: "+=2400",
           scrub: true,
