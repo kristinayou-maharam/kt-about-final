@@ -519,10 +519,14 @@
           </div>
           </div>
   
-          <div id="reveal-callout" class="callout-text" style="margin-top: 320px;">
+          <div id="reveal-callout" class="callout-text" style="margin-top: 200px; margin-bottom: 200px;">
             Florence championed the practice of collaborating with—and crediting—the leading creative minds of the time, from weaver Anni Albers to graphic designer Herbert Matter.
           </div>
-  
+
+          <div id="scroll-anchor-wrapper">
+
+          </div>
+          
           <div id="mobile-scroll-container">
             <p id="seemore">Scroll to see more →</p>
             <div id="mobile-horizontal-scroll">
@@ -560,9 +564,11 @@
               </div>
             </div>
           </div>
-  
+
+          
+
           <div id="scroll-container-two">
-            <div id="scroll-seemore">
+            <div id="scroll-seemore-two">
             </div>
             <div id="horizontal-img-scroll-two">
               <div id="scroll-item">
@@ -898,9 +904,7 @@
           end: "+=2300",
           scrub: true,
           pin: false,
-          pinSpacing: false,
-          invalidateOnRefresh: true,
-          refreshPriority: 5
+          refreshPriority: 3
         }
       });
 
@@ -921,7 +925,7 @@
           triggerElement: pagebreakContainer,
           triggerHook: "onLeave",
           duration: "300%",
-          refreshPriority: 4
+          refreshPriority: 2
         })
         .setPin(pagebreakContainer)
         .setTween(animation)
@@ -931,25 +935,23 @@
 //Horizontal Scroll 2
       ScrollTrigger.create({
         trigger: "#scroll-container-two",
-        start: "top top",
-        end: "+=2400", // Adjust based on the length of the scrollable content
-        pin: true
+        start: "center center",
+        end: "+=2800", // Adjust based on the length of the scrollable content
+        pin: "#scroll-container-two"
       });
 
 
       gsap.to("#horizontal-img-scroll-two", {
-        xPercent: -550,
-        x: () => "52vw",
+        xPercent: -350,
+        x: () => "42vw",
         ease: "none",
         scrollTrigger: {
-          trigger: "#horizontal-img-scroll-two",
+          trigger: "#scroll-seemore-two",
           start: "center center",
-          end: "+=2400",
+          end: "+=2800",
           scrub: true,
           pin: false,
-          pinSpacing: false,
-          invalidateOnRefresh: true,
-          refreshPriority: 3
+          refreshPriority: 0
         }
       });
   //
@@ -969,7 +971,7 @@
           triggerElement: pagebreakContainerTwo,
           triggerHook: "onLeave",
           duration: "300%",
-          refreshPriority: 2
+          refreshPriority: 1
         })
         .setPin(pagebreakContainerTwo)
         .setTween(animationtwo)

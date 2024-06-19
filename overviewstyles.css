@@ -108,6 +108,16 @@ p a:hover{
     width: 100%;;
   }
 
+  #scroll-seemore-two {
+    display: block;
+    font-size: 12px;
+    font-family: 'KTFold-Medium';
+    margin-top: 10vh;
+    margin-bottom: 5px;
+    width: 100%;;
+  }
+
+
   #caption {
     font-family: 'KTFold-Regular';
     font-size: 14px;
@@ -309,11 +319,20 @@ p a:hover{
     display: block;
   }
 
+  #scroll-anchor-wrapper{
+    display: block;
+    height: 30vh!important;
+    background-color: black;
+  }
+
+
   #scroll-container-two {
     overflow-x: hidden !important;
     overflow-y: hidden;
     width: 100% !important;
+    margin-top: 50vh !important;
     display: block;
+
   }
 
   #horizontal-img-scroll-two {
@@ -324,6 +343,8 @@ p a:hover{
     position: relative;
     padding-bottom: 50px;
     margin-bottom: 100px;
+    position: relative !important;
+    margin-top: 200px !important;
   }
 
   #horizontal-img-scroll img {
