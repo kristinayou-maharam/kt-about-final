@@ -909,13 +909,14 @@ $('.slick-carousel').slick({
 //Horizontal Scroll 1
       let scrollContainer = document.getElementById("scroll-container");
       let scrollContainerTwo = document.getElementById("scroll-container-two");
-      let wholeContainer = document.querySelector(".kt-container");
+      let wholeContainer = document.querySelector(".kt-overview");
       
       ScrollTrigger.create({
         trigger: "#scroll-container",
         start: "top top",
-        end: "+=2300", // Adjust based on the length of the scrollable content
-        pin: true
+        end: () => `+=${scrollContainer.offsetWidth*3}`, // Adjust based on the length of the scrollable content
+        pin: true,
+        refreshPriority: 4
       });
 
       gsap.to("#horizontal-img-scroll", {
@@ -925,9 +926,10 @@ $('.slick-carousel').slick({
         scrollTrigger: {
           trigger: "#horizontal-img-scroll",
           start: "center center",
-          end: "+=2300",
+          end: () => `+=${scrollContainer.offsetWidth*3}`,
           scrub: true,
-          pin: false
+          pin: false,
+          refreshPriority: 4
         }
       });
 
@@ -947,7 +949,8 @@ $('.slick-carousel').slick({
       new ScrollMagic.Scene({
           triggerElement: pagebreakContainer,
           triggerHook: "onLeave",
-          duration: "300%"
+          duration: "300%",
+          refreshPriority: 3
         })
         .setPin(pagebreakContainer)
         .setTween(animation)
@@ -971,8 +974,9 @@ $('.anni-carousel').slick({
       ScrollTrigger.create({
         trigger: "#scroll-container-two",
         start: "center center",
-        end: "+=2800", // Adjust based on the length of the scrollable content
-        pin: "#scroll-container-two"
+        end: () => `+=${scrollContainerTwo.offsetWidth*4}`,
+        pin: true,
+        refreshPriority: 2
       });
 
 
@@ -981,11 +985,12 @@ $('.anni-carousel').slick({
         x: () => "42vw",
         ease: "none",
         scrollTrigger: {
-          trigger: "#scroll-seemore-two",
+          trigger: "#horizontal-img-scroll-two",
           start: "center center",
-          end: "+=2800",
+          end: () => `+=${scrollContainerTwo.offsetWidth*4}`,
           scrub: true,
-          pin: false
+          pin: false,
+          refreshPriority: 2
         }
       });
   //
@@ -1004,7 +1009,8 @@ $('.anni-carousel').slick({
       new ScrollMagic.Scene({
           triggerElement: pagebreakContainerTwo,
           triggerHook: "onLeave",
-          duration: "300%"
+          duration: "300%",
+          refreshPriority: 1
         })
         .setPin(pagebreakContainerTwo)
         .setTween(animationtwo)
