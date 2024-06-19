@@ -914,7 +914,7 @@ $('.slick-carousel').slick({
       ScrollTrigger.create({
         trigger: "#scroll-container",
         start: "top top",
-        end: () => `+=${scrollContainer.offsetWidth*3}`, // Adjust based on the length of the scrollable content
+        end: "+=2300", // Adjust based on the length of the scrollable content
         pin: true,
         refreshPriority: 4
       });
@@ -926,7 +926,7 @@ $('.slick-carousel').slick({
         scrollTrigger: {
           trigger: "#horizontal-img-scroll",
           start: "center center",
-          end: () => `+=${scrollContainer.offsetWidth*3}`,
+          end: "+=2300",
           scrub: true,
           pin: false,
           refreshPriority: 4
@@ -973,8 +973,8 @@ $('.anni-carousel').slick({
 //Horizontal Scroll 2
       ScrollTrigger.create({
         trigger: "#scroll-container-two",
-        start: "center center",
-        end: () => `+=${scrollContainerTwo.offsetWidth*5}`,
+        start: "top top",
+        end: "+=2400", // Adjust based on the length of the scrollable content
         pin: true,
         refreshPriority: 2
       });
@@ -987,7 +987,7 @@ $('.anni-carousel').slick({
         scrollTrigger: {
           trigger: "#horizontal-img-scroll-two",
           start: "center center",
-          end: () => `+=${scrollContainerTwo.offsetWidth*5}`,
+          end: "+=2400",
           scrub: true,
           pin: false,
           refreshPriority: 2
