@@ -927,7 +927,8 @@
           end: "+=2400",
           scrub: true,
           pin: false,
-          invalidateOnRefresh: true
+          invalidateOnRefresh: true,
+          refreshPriority: -1
         }
       });
 
@@ -953,7 +954,7 @@ new ScrollMagic.Scene({
   .addTo(controller);
   //
 
-  
+
       ScrollReveal().reveal('#reveal-callout', {
         duration: 2000
       });
