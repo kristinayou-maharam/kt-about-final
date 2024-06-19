@@ -903,7 +903,8 @@
           start: "center center",
           end: "+=2300",
           scrub: true,
-          pin: false
+          pin: false,
+          refreshPriority: 3
         }
       });
 
@@ -923,7 +924,8 @@
       new ScrollMagic.Scene({
           triggerElement: pagebreakContainer,
           triggerHook: "onLeave",
-          duration: "300%"
+          duration: "300%",
+          refreshPriority: 2
         })
         .setPin(pagebreakContainer)
         .setTween(animation)
@@ -948,7 +950,8 @@
           start: "center center",
           end: "+=2800",
           scrub: true,
-          pin: false
+          pin: false,
+          refreshPriority: 1
         }
       });
   //
@@ -967,14 +970,15 @@
       new ScrollMagic.Scene({
           triggerElement: pagebreakContainerTwo,
           triggerHook: "onLeave",
-          duration: "300%"
+          duration: "300%",
+          refreshPriority: 1
         })
         .setPin(pagebreakContainerTwo)
         .setTween(animationtwo)
         .addTo(controller);
 //
 
-
+ScrollTrigger.sort();
 
       ScrollReveal().reveal('#reveal-callout', {
         duration: 2000
