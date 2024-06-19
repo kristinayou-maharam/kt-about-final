@@ -881,6 +881,30 @@
 
 
 //changed 6/19
+ScrollReveal().reveal('#reveal-callout', {
+        duration: 2000
+      });
+      ScrollReveal().reveal('.reveal-image', {
+        duration: 2000
+      });
+
+      var parallax = document.getElementsByClassName('parallaxImage');
+      new simpleParallax(parallax, {
+        scale: 1.1
+      });
+
+$('.slick-carousel').slick({
+        infinite: true,
+        slidesToShow: 1, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        nextArrow: '.nextarrow',
+        prevArrow: '.prevarrow',
+        dots: false, // Adds the dots on the bottom
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
 
 //Horizontal Scroll 1
       let scrollContainer = document.getElementById("scroll-container");
@@ -903,8 +927,7 @@
           start: "center center",
           end: "+=2300",
           scrub: true,
-          pin: false,
-          refreshPriority: 3
+          pin: false
         }
       });
 
@@ -924,13 +947,25 @@
       new ScrollMagic.Scene({
           triggerElement: pagebreakContainer,
           triggerHook: "onLeave",
-          duration: "300%",
-          refreshPriority: 2
+          duration: "300%"
         })
         .setPin(pagebreakContainer)
         .setTween(animation)
         .addTo(controller);
 //
+
+$('.anni-carousel').slick({
+        infinite: true,
+        slidesToShow: 1, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        nextArrow: '.anni-nextarrow',
+        prevArrow: '.anni-prevarrow',
+        dots: false, // Adds the dots on the bottom
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
 
 //Horizontal Scroll 2
       ScrollTrigger.create({
@@ -950,8 +985,7 @@
           start: "center center",
           end: "+=2800",
           scrub: true,
-          pin: false,
-          refreshPriority: 1
+          pin: false
         }
       });
   //
@@ -970,28 +1004,12 @@
       new ScrollMagic.Scene({
           triggerElement: pagebreakContainerTwo,
           triggerHook: "onLeave",
-          duration: "300%",
-          refreshPriority: 1
+          duration: "300%"
         })
         .setPin(pagebreakContainerTwo)
         .setTween(animationtwo)
         .addTo(controller);
 //
-
-ScrollTrigger.sort();
-
-      ScrollReveal().reveal('#reveal-callout', {
-        duration: 2000
-      });
-      ScrollReveal().reveal('.reveal-image', {
-        duration: 2000
-      });
-
-      var parallax = document.getElementsByClassName('parallaxImage');
-      new simpleParallax(parallax, {
-        scale: 1.1
-      });
-
 
 
 
@@ -1008,32 +1026,7 @@ ScrollTrigger.sort();
         cssEase: 'linear'
       });
 
-      $('.anni-carousel').slick({
-        infinite: true,
-        slidesToShow: 1, // Shows a three slides at a time
-        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-        arrows: true, // Adds arrows to sides of slider
-        nextArrow: '.anni-nextarrow',
-        prevArrow: '.anni-prevarrow',
-        dots: false, // Adds the dots on the bottom
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
-
-
-      $('.slick-carousel').slick({
-        infinite: true,
-        slidesToShow: 1, // Shows a three slides at a time
-        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-        arrows: true, // Adds arrows to sides of slider
-        nextArrow: '.nextarrow',
-        prevArrow: '.prevarrow',
-        dots: false, // Adds the dots on the bottom
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
+     
     </script>
     <!-- end for Overview -->
 
