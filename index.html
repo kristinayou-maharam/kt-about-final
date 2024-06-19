@@ -745,7 +745,7 @@
   
           <div id="overlap-img" style="margin-top: -400px;">
             <div>
-              <img id="right-half-img" src="./images/ballon_5.png">
+              <img id="right-half-img" src="./images/ballon_5.png" style="width: 48% !important;">
               <div id="sheila-caption" style="width: 60%; display: inline-flex;margin-left: 54%;">
                 <p id="caption" style="margin-left: -0.5vw; width: 80% !important;">Cato by Paul Maute in Fire Red. Photography by Nick Ballón, 2023.</p>
               </div>
@@ -899,7 +899,8 @@
           scrub: true,
           pin: false,
           pinSpacing: false,
-          invalidateOnRefresh: true
+          invalidateOnRefresh: true,
+          refreshPriority: 5
         }
       });
 
@@ -919,7 +920,8 @@
       new ScrollMagic.Scene({
           triggerElement: pagebreakContainer,
           triggerHook: "onLeave",
-          duration: "300%"
+          duration: "300%",
+          refreshPriority: 4
         })
         .setPin(pagebreakContainer)
         .setTween(animation)
@@ -946,7 +948,8 @@
           scrub: true,
           pin: false,
           pinSpacing: false,
-          invalidateOnRefresh: true
+          invalidateOnRefresh: true,
+          refreshPriority: 3
         }
       });
   //
@@ -965,7 +968,8 @@
       new ScrollMagic.Scene({
           triggerElement: pagebreakContainerTwo,
           triggerHook: "onLeave",
-          duration: "300%"
+          duration: "300%",
+          refreshPriority: 2
         })
         .setPin(pagebreakContainerTwo)
         .setTween(animationtwo)
