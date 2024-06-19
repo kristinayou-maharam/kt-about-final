@@ -240,12 +240,7 @@ p a:hover{
     margin-top: 0;
   }
 
-  #right {
-    display: inline-block;
-    width: 48%;
-    margin-left: 3%;
-    margin-top: 0vh;
-  }
+
 
   #left-half-img {
     width: 46% !important;
@@ -624,9 +619,10 @@ p a:hover{
       margin-bottom: 0 !important;
     }
 
-    #overlap-img {
+    #overlap-img{
       margin-bottom: 5vh !important;
     }
+
 
     #arrows {
       width: 8vw !important;
@@ -870,8 +866,12 @@ p a:hover{
       display: block;
     }
 
+    #left {
+      width: 100% !important;
+    }
+
     #right-half-img {
-      width: 100%;
+      width: 100% !important;
       margin-left: 0;
       margin-top: 5vh !important;
       display: block;
@@ -1005,6 +1005,7 @@ p a:hover{
 
     .cato-carousel {
       margin-top: -15vh !important;
+      width: 100% !important;
     }
 
     #sheila-carousel {
@@ -1041,6 +1042,10 @@ p a:hover{
       margin-top: 15vh;
       margin-bottom: 0;
       text-align: center;
+    }
+
+    .cato{
+      width: 100% !important;
     }
 
   }
