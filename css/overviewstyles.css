@@ -782,7 +782,7 @@ p a:hover{
   @media only screen and (max-width: 576px) {
 
     #arrows {
-      width: 12vw !important;
+      width: 18vw !important;
     }
 
     .fk-title {
@@ -1056,9 +1056,12 @@ p a:hover{
 
 /* added 6/17 */
     #scroll-to-top{
-      margin-top: 15vh;
+      margin-top: 0vh;
       margin-bottom: 0;
+      left: 40vw !important;
+      top: 20vh !important;
       text-align: center;
+      position: relative;
     }
 
   }
