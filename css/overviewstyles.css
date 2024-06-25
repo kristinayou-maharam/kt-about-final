@@ -884,12 +884,12 @@ p a:hover{
 
     .slick-controls-two {
       width: 25vw !important;
-      margin-left: 8% !important;
+      margin-left: 3% !important;
     }
 
     .slick-controls-three {
       width: 25vw !important;
-      margin-left: 8% !important;
+      margin-left: 3% !important;
     }
 
     .slick-controls-four {
@@ -1056,12 +1056,13 @@ p a:hover{
 
 /* added 6/17 */
     #scroll-to-top{
-      margin-top: 0vh;
       margin-bottom: 0;
-      left: 40vw !important;
-      top: 20vh !important;
+      margin-left: 12vw !important;
+      margin-top: 20vh !important;
+      width: 70vw;
       text-align: center;
-      position: relative;
+      position: static;
+      display: block;
     }
 
   }
