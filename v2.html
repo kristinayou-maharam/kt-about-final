@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css">
 
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css'>
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css'>
         <link rel="stylesheet" media="all" href="css/fonts.css">
         <link rel="stylesheet" media="all" href="css/styles.css">
         <link rel="stylesheet" media="all" href="css/overviewstyles.css">
@@ -974,6 +972,19 @@ new ScrollMagic.Scene({
   .setPin(pagebreaktwo)
   .setTween(animationtwo)
   .addTo(controller);
+
+  $('.cato-carousel').slick({
+        infinite: true,
+        slidesToShow: 1, // Shows a three slides at a time
+        slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+        arrows: true, // Adds arrows to sides of slider
+        nextArrow: '.anni-nextarrow',
+        prevArrow: '.anni-prevarrow',
+        dots: false, // Adds the dots on the bottom
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
 
   $('.anni-carousel').slick({
   infinite: true,
