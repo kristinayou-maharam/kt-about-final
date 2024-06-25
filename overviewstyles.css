@@ -325,7 +325,7 @@ p a:hover{
     overflow-x: hidden !important;
     overflow-y: hidden;
     width: 100% !important;
-    margin-top: 50vh !important;
+    /* margin-top: 50vh !important; */
     display: block;
 
   }
