@@ -781,6 +781,10 @@ p a:hover{
 
   @media only screen and (max-width: 576px) {
 
+    #arrows {
+      width: 12vw !important;
+    }
+
     .fk-title {
       margin-bottom: 20vh !important;
     }
