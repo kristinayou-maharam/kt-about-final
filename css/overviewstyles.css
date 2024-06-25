@@ -503,6 +503,10 @@ p a:hover{
     width: 80px;
   }
 
+  .slick-arrow{
+    display: inline-block !important;
+  }
+
   .slick-controls {
     margin-top: 15px;
   }
