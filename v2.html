@@ -342,7 +342,7 @@
           </div>
           <div>
           <img src="./images/florence_hans_saarinen_family.jpg">
-          <p id="caption" style="width: 70% !important;">Florence and Hans Knoll with the Saarinen Family, ca. 1949. <br> <h6>Courtesy of Cranbrook Archives Digital Collection.</h6></em></p>
+          <p id="caption" style="width: 70% !important;">Florence and Hans Knoll with the Saarinen Family, ca. 1949. <br> <h6>Courtesy of Cranbrook Archives Digital Collection.</h6></p>
           </div>
           <div>
           <img id="lastimg" src="./images/crown_hall.jpg">
@@ -559,7 +559,6 @@
                 <div>
                 <img src="./images/nylon_homespun_2.jpg">
                 <p id="caption" style="width: 70% !important;">Nylon Homespun by Suzanne Huguenin, ca. 1958.</p>
-                </div>
                 </div>
                 </div>
 
@@ -873,7 +872,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.create({
             trigger: "#scroll-container",
             start: "top top",
-            end: "+=340vw", // Adjust based on the length of the scrollable content
+            end: "+=2300", // Adjust based on the length of the scrollable content
             pin: true,
             anticipatePin: 1
         });
@@ -881,9 +880,9 @@ ScrollTrigger.create({
 let scrollContainer = document.getElementById("scroll-container");
 
 gsap.to("#horizontal-img-scroll", {
-    xPercent: -210,
-    x: () => "30%",
-    ease: "sine",
+    xPercent: -480,
+    x: () => "52vw",
+    ease: "none",
     scrollTrigger: {
         trigger:"#horizontal-img-scroll",
         start: "center center",
@@ -898,20 +897,20 @@ gsap.to("#horizontal-img-scroll", {
 ScrollTrigger.create({
             trigger: "#scroll-container-two",
             start: "top top",
-            end: "+=400vw", // Adjust based on the length of the scrollable content
+            end: "+=2400", // Adjust based on the length of the scrollable content
             pin: true,
             anticipatePin: 1
         });
 
 
 gsap.to("#horizontal-img-scroll-two", {
-    xPercent: -320,
-    x: () => "38%",
-    ease: "sine",
+    xPercent: -350,
+    x: () => "42vw",
+    ease: "none",
     scrollTrigger: {
         trigger:"#horizontal-img-scroll-two",
         start: "center center",
-        end: "+=400vw",
+        end: "+=2400",
         scrub: true,
         pin: false,
         invalidateOnRefresh: true,
