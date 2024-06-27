@@ -906,17 +906,17 @@ p a:hover{
 /* added 6/18 */
 
     .slick-controls-two {
-      width: 20vw !important;
-      margin-left: 3% !important;
+      width: 25vw !important;
+      margin-left: 2% !important;
     }
 
     .slick-controls-three {
-      width: 20vw !important;
-      margin-left: 3% !important;
+      width: 25vw !important;
+      margin-left: 2% !important;
     }
 
     .slick-controls-four {
-      width: 20vw !important;
+      width: 25vw !important;
       margin-left: 2% !important;
     }
   
