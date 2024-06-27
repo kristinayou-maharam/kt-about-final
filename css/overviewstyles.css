@@ -1004,6 +1004,7 @@ p a:hover{
       height: 20vh;
       margin-top: 5vh !important;
       margin-bottom: 10vh !important;
+      z-index: 1000;
     }
 
     #moma-carousel img {
