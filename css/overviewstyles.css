@@ -1003,6 +1003,7 @@ p a:hover{
     #moma-carousel {
       height: 20vh;
       margin-top: 5vh !important;
+      margin-bottom: 10vh !important;
     }
 
     #moma-carousel img {
