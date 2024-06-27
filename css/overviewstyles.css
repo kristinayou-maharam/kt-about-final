@@ -342,7 +342,7 @@ p a:hover{
 
   /* changed 6/18- no position:relative */
   #horizontal-img-scroll-two {
-    width: 100%;
+    width: 100vw;
     height: 65vh;
     display: flex;
     flex-wrap: nowrap;
