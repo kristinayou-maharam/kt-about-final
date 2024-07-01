@@ -45,14 +45,12 @@ p a:hover{
 /* added 6/17 */
 #scroll-to-top{
   display: none;
-  width: 15vw;
+  right: 20px;
   z-index: 0;
   position: fixed;
-  top: 95vh;
-  right: 0;
+  bottom: 15px;
 }
-
-#scroll-to-top a{
+#backtotop:hover{
   color: #f99f00 !important;
 }
 

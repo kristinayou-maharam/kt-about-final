@@ -763,7 +763,7 @@
             “True colors, interesting textures, and serviceability are three qualities which have distinguished the Knoll Textiles collection from the beginning.” <br><br>– Florence Knoll
           </div>
           <div id="scroll-to-top">
-            <p><a href="#top"><strong>Back to Top ↑</strong></a></p>
+            <p id="backtotop" onclick="topFunction()"><strong>Back to Top ↑</strong></p>
         </div>
   
         </div>
@@ -1030,6 +1030,11 @@ window.addEventListener('scroll', function() {
     $('#scroll-to-top').css('display', 'none');
   };
 });
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
          </script>
     <!-- end for Overview -->
 
