@@ -1021,6 +1021,15 @@ prevArrow: '.prevarrow',
   fade: true,
   cssEase: 'linear'
 });
+
+window.addEventListener('scroll', function() {
+  if(window.scrollY> 10000){
+    $('#scroll-to-top').css('display', 'block');
+  }
+  else{
+    $('#scroll-to-top').css('display', 'none');
+  };
+});
          </script>
     <!-- end for Overview -->
 

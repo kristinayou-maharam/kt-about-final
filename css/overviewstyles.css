@@ -44,7 +44,7 @@ p a:hover{
 
 /* added 6/17 */
 #scroll-to-top{
-  display: inline-block;
+  display: none;
   width: 15vw;
   z-index: 0;
   position: fixed;
