@@ -312,6 +312,16 @@ p a:hover{
     
   }
 
+   /* changed 6/18- no position:relative */
+   #horizontal-img-scroll-two {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+  }
+
   #scroll-item {
     width: 30%;
     margin-right: 20px;
@@ -319,7 +329,7 @@ p a:hover{
   }
 
   #scroll-two-item {
-    width: 35%;
+    width: 30%;
     margin-right: 20px;
     height: auto;
   }
@@ -340,16 +350,7 @@ p a:hover{
     position: relative;
   }
 
-  /* changed 6/18- no position:relative */
-  #horizontal-img-scroll-two {
-    width: 100vw;
-    height: 65vh;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    padding-bottom: 50px;
-    margin-bottom: 100px;
-  }
+
 
   #horizontal-img-scroll img {
     height: 95%;
@@ -360,7 +361,7 @@ p a:hover{
   #horizontal-img-scroll-two img {
     height: 95%;
     display: inline-block;
-    margin-right: 1.5vw;
+    margin-right: 20px;
   }
 
   #full-width-carousel {
